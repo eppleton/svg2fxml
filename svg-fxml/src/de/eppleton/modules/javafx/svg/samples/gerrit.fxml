@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.transform.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<Group id="Document" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" xmlns:fx="http://javafx.com/fxml" xmlns:str="http://exslt.org/strings">
+    <children>
+        <fx:define>
+    
+        </fx:define>
+        <SVGPath content="M 62.6381 6.8085 C 31.0529 6.8085 5.447 32.4156 5.447 64             C 5.447 66.482 5.6577 68.9089 5.9636 71.3072 C 9.5577 99.4342 33.5351             121.1915 62.6381 121.1915 C 91.7415 121.1915 115.7188 99.4342 119.313             71.3072 C 119.6185 68.9089 119.83 66.482 119.83 64 C 119.83 32.4156             94.2232 6.8085 62.6381 6.8085 Z" id="background">
+            <opacity>1</opacity>
+            <fill>
+                <Color>
+                    <red>0.3764705882352941</red>
+                    <green>0.5882352941176471</green>
+                    <blue>0.8901960784313725</blue>
+                    <opacity>1</opacity>
+                </Color>
+            </fill>
+            <stroke>
+                <Color>
+                    <red>1</red>
+                    <green>1</green>
+                    <blue>1</blue>
+                </Color>
+            </stroke>
+            <strokeWidth>11</strokeWidth>
+        </SVGPath>
+        <SVGPath content="M 62.6381 114.383 C 88.9706 114.383 110.6626 94.6968 113.9152 69.2487 C             100.6936 60.109 82.6032 54.4681 62.6381 54.4681 C 42.673 54.4681 24.5821             60.109 11.3617 69.2487 C 14.6139 94.6968 36.3059 114.383 62.6381 114.383             Z" id="gloss">
+            <opacity>1</opacity>
+            <fill>
+                <Color>
+                    <red>0.13725490196078433</red>
+                    <green>0.43137254901960786</green>
+                    <blue>0.8470588235294118</blue>
+                    <opacity>1</opacity>
+                </Color>
+            </fill>
+        </SVGPath>
+        <SVGPath content="M 44.7016 41.0951 L 69.3251 65.7207 L 44.5005 90.2008 L 55.7281 101.4289             L 92.0866 65.0698 L 56.5768 29.5638 L 44.7016 41.0951 Z" id="arrow">
+            <opacity>1</opacity>
+            <fill>
+                <Color>
+                    <red>1</red>
+                    <green>1</green>
+                    <blue>1</blue>
+                    <opacity>1</opacity>
+                </Color>
+            </fill>
+            <effect>
+                <fx:reference source="filter1"/>
+            </effect>
+        </SVGPath>
+    </children>
+</Group>

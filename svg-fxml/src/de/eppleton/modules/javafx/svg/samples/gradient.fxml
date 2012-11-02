@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.transform.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<Group id="Document" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" xmlns:fx="http://javafx.com/fxml" xmlns:str="http://exslt.org/strings">
+    <children>
+        <fx:define/>
+        <Group>
+            <children>
+                <Polygon id="polygon29" points="120.40869,59.164062,116.31006,64.799805,111.5835,66.079102,115.54053,60.359375,120.40869,59.164062">
+                    <fill>
+                        <LinearGradient>
+                            <proportional>false</proportional>
+                            <startX>111.5834961</startX>
+                            <startY>62.621582</startY>
+                            <endX>120.4086914</endX>
+                            <endY>62.621582</endY>
+                            <stops>
+                                <Stop offset="0.183432">
+                                    <color>
+                                        <Color>
+                                            <red>0.1803921568627451</red>
+                                            <green>0.20392156862745098</green>
+                                            <blue>0.21176470588235294</blue>
+                                            <opacity>
+                                                -1
+                                            </opacity>
+                                        </Color>
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.5392354">
+                                    <color>
+                                        <Color>
+                                            <red>0.3607843137254902</red>
+                                            <green>0.3764705882352941</green>
+                                            <blue>0.3686274509803922</blue>
+                                            <opacity>
+                                                -1
+                                            </opacity>
+                                        </Color>
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.8359358">
+                                    <color>
+                                        <Color>
+                                            <red>0.48627450980392156</red>
+                                            <green>0.4980392156862745</green>
+                                            <blue>0.47843137254901963</blue>
+                                            <opacity>
+                                                -1
+                                            </opacity>
+                                        </Color>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1">
+                                    <color>
+                                        <Color>
+                                            <red>0.5333333333333333</red>
+                                            <green>0.5411764705882353</green>
+                                            <blue>0.5215686274509804</blue>
+                                            <opacity>
+                                                -1
+                                            </opacity>
+                                        </Color>
+                                    </color>
+                                </Stop>
+                            </stops>
+                            <proportional>false</proportional>
+                            <startX>111.5834961</startX>
+                            <startY>62.621582</startY>
+                            <endX>120.4086914</endX>
+                            <endY>62.621582</endY>
+                        </LinearGradient>
+                    </fill>
+                </Polygon>
+            </children>
+        </Group>
+    </children>
+</Group>

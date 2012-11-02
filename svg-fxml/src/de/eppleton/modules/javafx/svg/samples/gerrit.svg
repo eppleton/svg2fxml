@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Generator: Adobe Fireworks CS6, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.0  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="" viewBox="0 0 128 128" style="background-color:#ffffff00" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+     xml:space="preserve" x="0px" y="0px" width="128px" height="128px">
+  <defs>
+    <filter id="filter1" x="-100%" y="-100%" width="300%" height="300%">
+      <!-- Drop Shadow -->
+      <feOffset result="out" in="SourceGraphic" dx="-1.2941" dy="-4.8296"/>
+      <feColorMatrix result="out" in="out" type="matrix" 
+                     values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.451 0"/>
+      <feGaussianBlur result="out" in="out" stdDeviation="3"/>
+      <feBlend in="SourceGraphic" in2="out" mode="normal" result="Drop_Shadow1"/>
+    </filter>
+  </defs>
+  <path id="background" 
+        d="M 62.6381 6.8085 C 31.0529 6.8085 5.447 32.4156 5.447 64 
+           C 5.447 66.482 5.6577 68.9089 5.9636 71.3072 C 9.5577 99.4342 33.5351 
+           121.1915 62.6381 121.1915 C 91.7415 121.1915 115.7188 99.4342 119.313 
+           71.3072 C 119.6185 68.9089 119.83 66.482 119.83 64 C 119.83 32.4156 
+           94.2232 6.8085 62.6381 6.8085 Z" 
+        stroke="#ffffff" 
+        stroke-width="11" 
+        fill="#6096e3"/>
+  <path id="gloss" 
+        d="M 62.6381 114.383 C 88.9706 114.383 110.6626 94.6968 113.9152 69.2487 C 
+           100.6936 60.109 82.6032 54.4681 62.6381 54.4681 C 42.673 54.4681 24.5821 
+           60.109 11.3617 69.2487 C 14.6139 94.6968 36.3059 114.383 62.6381 114.383 
+           Z" 
+        fill="#236ed8"/>
+  <path id="arrow" 
+        filter="url(#filter1)" 
+        d="M 44.7016 41.0951 L 69.3251 65.7207 L 44.5005 90.2008 L 55.7281 101.4289 
+           L 92.0866 65.0698 L 56.5768 29.5638 L 44.7016 41.0951 Z" 
+        fill="#ffffff"/>
+</svg>

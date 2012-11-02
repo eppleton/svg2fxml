@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.transform.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<Group id="Document" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" xmlns:fx="http://javafx.com/fxml" xmlns:str="http://exslt.org/strings"><children/></Group>
