@@ -25,6 +25,8 @@
         </Group>
     </xsl:template>
      
+    <xsl:template match="svg:desc|svg:title"/>
+     
     <xsl:template match="svg:defs">
         <xsl:element name="fx:define">
             <xsl:apply-templates/>
@@ -124,8 +126,6 @@
         -->
     </xsl:template>
     
- 
-    
     <xsl:template name="effect">
         <xsl:param name="gaussianBlur"/>       
         <xsl:element name="radius">
@@ -193,8 +193,7 @@
     </xsl:template> 
     
     <xsl:template match="svg:use">
-        <Group>
-           
+        <Group>     
             <xsl:if test="@style != ''">
                 <xsl:call-template name="style">
                     <xsl:with-param name="style" select="@style"/>
