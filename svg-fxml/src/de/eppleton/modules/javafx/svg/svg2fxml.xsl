@@ -36,8 +36,9 @@
     <xsl:template match="svg:clipPath">
         <Group>
             <xsl:if test="@id != ''">
+                
                 <xsl:attribute name="fx:id">
-                    <xsl:value-of select="@id"/>
+                    <xsl:value-of select="translate(@id, '-' , '')"/>
                 </xsl:attribute>
             </xsl:if>
             <xsl:if test="@transform != ''">
@@ -61,7 +62,7 @@
                <xsl:element name="DropShadow">
                         <xsl:if test="$id">
                             <xsl:attribute name="fx:id">
-                                <xsl:value-of select="$id"/>
+                                <xsl:value-of select="translate(@id, '-' , '')"/>
                             </xsl:attribute>
                         </xsl:if>
                         <xsl:if test="./svg:feOffset">
@@ -88,7 +89,7 @@
                <xsl:element name="GaussianBlur">
                 <xsl:if test="$id">
                     <xsl:attribute name="fx:id">
-                        <xsl:value-of select="$id"/>
+                       <xsl:value-of select="translate(@id, '-' , '')"/>
                     </xsl:attribute>
                 </xsl:if>
                 <xsl:element name="radius">
@@ -143,7 +144,7 @@
                 </xsl:call-template>   
             </xsl:if> 
             <xsl:if test="@id != ''">
-                <xsl:attribute name="id">
+                <xsl:attribute name="fx:id">
                     <xsl:value-of select="@id"/>
                 </xsl:attribute>
             </xsl:if>
@@ -523,7 +524,15 @@
     <xsl:template name="style">
         <xsl:param name="style"/>
         <xsl:variable name="opacity">
-            <xsl:choose>
+            1
+            <xsl:for-each select="str:split($style, ';')"> 
+                <xsl:if test="substring-before(.,':')='opacity'">
+                     <xsl:value-of select="substring-after(.,'opacity:')"></xsl:value-of>
+                </xsl:if>
+            </xsl:for-each>
+            
+            
+           <!-- <xsl:choose>
                 <xsl:when test="contains($style,'opacity:')">
                     <xsl:choose>
                         <xsl:when test="contains(substring-after($style,'opacity:'),';')">
@@ -536,7 +545,7 @@
                 </xsl:when>
                 
                 <xsl:otherwise>1</xsl:otherwise>
-            </xsl:choose>
+            </xsl:choose>-->
         </xsl:variable>
         <opacity>
             <xsl:value-of select="$opacity"/>

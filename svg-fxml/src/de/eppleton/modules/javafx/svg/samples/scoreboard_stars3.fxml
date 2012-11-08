@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.transform.*?>
+
+<fx:root type="javafx.scene.Group" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <fx:define>
+      <GaussianBlur radius="0.26138142" fx:id="filter4113" />
+      <GaussianBlur radius="8.0" fx:id="filter5565" />
+      <GaussianBlur radius="0.26138142" fx:id="filter4113_6" />
+      <GaussianBlur radius="0.26138142" fx:id="filter4113_8" />
+      <GaussianBlur radius="0.26138142" fx:id="filter4113_6_8" />
+      <GaussianBlur radius="0.26138142" fx:id="filter4113_8_7" />
+      <GaussianBlur radius="0.26138142" fx:id="filter4113_1" />
+      <GaussianBlur radius="0.26138142" fx:id="filter4113_8_7_4" />
+      <GaussianBlur radius="0.26138142" fx:id="filter4113_8_7_1" />
+    </fx:define>
+    <Group id="layer1">
+      <children>
+        <Group id="g3152">
+          <transforms>
+            <Translate x="-121.42857" y="-91.428572" />
+          </transforms>
+        </Group>
+        <Rectangle id="rect3196" height="506.00806" opacity="0.49488059" stroke="TRANSPARENT" width="799.00806" x="-4.1658697E-7" y="546.35413">
+          <fill>
+            <Color blue="0.000" green="0.000" opacity="0.763" red="0.000" fx:id="x1" />
+          </fill>
+        </Rectangle>
+        <Rectangle id="rect3968" fill="$x1" height="507.0" opacity="0.49488059" stroke="TRANSPARENT" width="240.0" x="280.0" y="545.375" />
+        <Text id="message" fill="WHITE" layoutX="-20.0" layoutY="3.0" opacity="1.0" stroke="TRANSPARENT" text="Level cleared!" x="314.48447" y="609.91925">
+          <font>
+            <Font name="Feast of Flesh BB" size="40.0" fx:id="x2" />
+          </font>
+        </Text>
+        <Text id="score" font="$x2" opacity="1.0" stroke="TRANSPARENT" text="000" x="348.78894" y="887.66321">
+          <fill>
+            <LinearGradient endX="400.39569" endY="853.25702" proportional="false" startX="401.27643" startY="897.54767">
+              <stops>
+                <Stop>
+                  <color>
+                    <Color blue="0.686" green="1.000" red="1.000" fx:id="x5" />
+                  </color>
+                </Stop>
+                <Stop color="#ffc800" offset="0.5" />
+                <Stop color="#ffffa6" offset="1.0" />
+              </stops>
+            </LinearGradient>
+          </fill>
+        </Text>
+        <Group effect="$filter4113_1" opacity="1.0">
+          <children>
+            <SVGPath id="path4005" content="m 435.31599,751.39808 c -8.70364,-6.92414 -17.81673,-13.58475 -27.33112,-19.94105 -0.72772,-0.48727 -1.45784,-0.97269 -2.19032,-1.45624 -10.51346,6.34799 -20.60662,13.05674 -30.30147,20.07752 1.18005,-13.99983 2.54653,-27.99785 4.10289,-41.99136 -9.22238,-9.56691 -18.95413,-18.87663 -29.1507,-27.91436 12.71893,-3.12115 25.61618,-5.80961 38.68337,-8.02556 5.65821,-12.7609 11.75391,-25.43919 18.30456,-38.01818 0.31768,0.67307 0.63423,1.34643 0.94965,2.02008 5.69486,12.1528 11.00047,24.39185 15.91966,36.69999 12.98804,2.74985 25.77586,5.99439 38.33536,9.70456 -10.54206,8.56903 -20.57621,17.46238 -30.07549,26.64161 1.0827,14.06711 2.00033,28.13568 2.75361,42.20299 z" opacity="0.49488059">
+              <fill>
+                <Color blue="0.102" green="0.102" opacity="0.245" red="0.102" fx:id="x3" />
+              </fill>
+              <stroke>
+                <Color blue="0.486" green="0.486" red="0.502" fx:id="x4" />
+              </stroke>
+            </SVGPath>
+            <SVGPath id="path4042" content="m 547.82682,773.96898 c -7.18446,-9.61723 -14.90033,-19.07048 -23.13745,-28.30887 -11.8149,3.43599 -23.30502,7.32457 -34.43207,11.63148 4.73273,-13.23948 9.65572,-26.427 14.76751,-39.55864 -6.44285,-11.62711 -13.45664,-23.13647 -21.04202,-34.48292 13.13485,0.22387 26.32678,0.95411 39.53681,2.19454 8.76882,-10.87166 17.938,-21.54276 27.49727,-31.99244 2.51807,13.9341 4.61266,27.85562 6.28709,41.74437 11.83184,5.98763 23.35985,12.39093 34.55592,19.18084 -12.37759,5.60051 -24.35259,11.63846 -35.89803,18.07544 -2.55661,13.87902 -5.26852,27.71866 -8.13503,41.5162 z" fill="$x3" opacity="0.49488059" stroke="$x4" />
+            <SVGPath id="path4044" content="m 310.10158,760.31835 c -11.23125,-4.66936 -22.81565,-8.9881 -34.69961,-12.95036 -8.78033,8.84784 -17.17944,17.89091 -25.21933,27.08049 -2.09783,-13.92141 -4.05378,-27.87814 -5.86443,-41.86748 -11.30901,-7.09049 -22.9577,-13.89115 -34.90153,-20.38718 11.6108,-5.9248 23.44752,-11.55421 35.50175,-16.8484 2.34778,-13.75805 5.0447,-27.53155 8.10823,-41.30381 8.9264,10.94203 17.55908,22.03756 25.87906,33.27698 13.16664,-0.65624 26.29403,-0.89605 39.34458,-0.70066 -7.80671,11.0867 -15.11269,22.33001 -21.9476,33.69115 4.73021,13.30219 9.33066,26.63913 13.79888,40.00927 z" fill="$x3" opacity="0.49488059" stroke="$x4" />
+          </children>
+          <transforms>
+            <Affine mxx="0.89965653" mxy="0.0" myx="0.0" myy="0.7990079" tx="36.229054" ty="192.4635" />
+          </transforms>
+        </Group>
+        <Group fx:id="star3" layoutX="-1.0" layoutY="0.0">
+          <children>
+            <SVGPath id="path4424" content="m 547.82682,773.96898 c -7.18446,-9.61723 -14.90033,-19.07048 -23.13745,-28.30887 -11.8149,3.43599 -23.30502,7.32457 -34.43207,11.63148 4.73273,-13.23948 9.65572,-26.427 14.76751,-39.55864 -6.44285,-11.62711 -13.45664,-23.13647 -21.04202,-34.48292 13.13485,0.22387 26.32678,0.95411 39.53681,2.19454 8.76882,-10.87166 17.938,-21.54276 27.49727,-31.99244 2.51807,13.9341 4.61266,27.85562 6.28709,41.74437 11.83184,5.98763 23.35985,12.39093 34.55592,19.18084 -12.37759,5.60051 -24.35259,11.63846 -35.89803,18.07544 -2.55661,13.87902 -5.26852,27.71866 -8.13503,41.5162 z" effect="$filter4113" fill="$x5" opacity="1.0" stroke="TRANSPARENT">
+              <transforms>
+                <Affine mxx="1.2233076" mxy="0.0" myx="0.0" myy="1.2779967" tx="583.06984" ty="-178.86166" />
+              </transforms>
+            </SVGPath>
+            <SVGPath id="path5455" content="m 1254.3147,811.35233 -34.7368,8.31904 -23.1374,-28.30887 29.57,-16.18881 28.3042,36.17864" opacity="1.0" stroke="TRANSPARENT">
+              <fill>
+                <LinearGradient endX="1254.31474" endY="797.4225308" proportional="false" startX="1196.4404800000002" startY="797.4225308">
+                  <stops>
+                    <Stop>
+                      <color>
+                        <Color blue="0.000" green="0.835" red="1.000" fx:id="x7" />
+                      </color>
+                    </Stop>
+                    <Stop offset="0.46282449">
+                      <color>
+                        <Color blue="0.000" green="0.776" red="1.000" fx:id="x6" />
+                      </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                      <color>
+                        <Color blue="0.000" green="0.494" red="0.749" fx:id="x8" />
+                      </color>
+                    </Stop>
+                  </stops>
+                </LinearGradient>
+              </fill>
+            </SVGPath>
+            <SVGPath id="path5457" content="m 1224.0105,775.17369 -29.57,16.18881 -34.4321,11.63148 21.8811,-12.9553 42.121,-14.86499" opacity="1.0" stroke="TRANSPARENT">
+              <fill>
+                <Color blue="0.000" green="0.467" red="0.588" fx:id="x13" />
+              </fill>
+            </SVGPath>
+            <SVGPath id="path5459" content="m 1181.8895,790.03868 -21.8811,12.9553 14.7675,-39.55864 25.1788,-23.95247 -18.0652,50.55581" opacity="1.0" stroke="TRANSPARENT">
+              <fill>
+                <LinearGradient endX="1194.5439900000001" endY="748.3431208" proportional="false" startX="1156.2609400000001" startY="809.7025607999999">
+                  <stops>
+                    <Stop color="#ffd502" />
+                    <Stop color="$x6" offset="0.43463492" />
+                    <Stop color="#875900" offset="1.0" />
+                  </stops>
+                </LinearGradient>
+              </fill>
+            </SVGPath>
+            <SVGPath id="path5461" content="m 1201.9547,739.48287 -25.1788,23.95247 -21.042,-34.48292 20.48,-33.53861 25.7408,44.06906" opacity="1.0" stroke="TRANSPARENT">
+              <fill>
+                <LinearGradient endX="1194.62822" endY="728.5087708" proportional="false" startX="1165.80782" startY="749.5724908">
+                  <stops>
+                    <Stop color="$x7" />
+                    <Stop color="$x6" offset="0.46282449" />
+                    <Stop color="$x8" offset="1.0" />
+                  </stops>
+                </LinearGradient>
+              </fill>
+            </SVGPath>
+            <SVGPath id="path5717" content="m 546.32955,768.95278 c -7.18446,-9.61723 -13.40306,-14.05428 -21.64018,-23.29267 -11.8149,3.43599 -19.56184,4.45817 -30.68889,8.76508 4.73273,-13.23948 5.91254,-23.5606 11.02433,-36.69224 -6.44285,-11.62711 -8.21619,-20.27007 -15.80157,-31.61652 13.13485,0.22387 21.08633,-1.91229 34.29636,-0.67186 8.76882,-10.87166 16.44073,-13.66016 26,-24.10984 2.51807,13.9341 6.10993,19.97302 7.78436,33.86177 11.83184,5.98763 16.62212,12.39093 27.81819,19.18084 -12.37759,5.60051 -17.61486,11.63846 -29.1603,18.07544 -2.55661,13.87902 -6.76579,22.70246 -9.6323,36.5 z" effect="$filter4113" opacity="1.0" stroke="TRANSPARENT">
+              <fill>
+                <LinearGradient endX="570.53314" endY="687.91296" proportional="false" startX="495.57727" startY="742.37457">
+                  <stops>
+                    <Stop color="$x7" />
+                    <Stop offset="0.5">
+                      <color>
+                        <Color blue="0.004" green="0.847" red="1.000" fx:id="x10" />
+                      </color>
+                    </Stop>
+                    <Stop offset="0.50999999">
+                      <color>
+                        <Color blue="0.408" green="0.949" red="1.000" fx:id="x11" />
+                      </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                      <color>
+                        <Color blue="0.357" green="0.949" red="1.000" fx:id="x12" />
+                      </color>
+                    </Stop>
+                  </stops>
+                </LinearGradient>
+              </fill>
+              <transforms>
+                <Affine mxx="1.2233076" mxy="0.0" myx="0.0" myy="1.2779967" tx="583.06984" ty="-178.86166" />
+              </transforms>
+            </SVGPath>
+            <SVGPath id="path5733" content="m 1244.9365,674.68981 -51.2855,87.91798 -9.1927,23.82493 24.7615,-9.15812 48.538,-109.91128 -2.7474,-0.91582 z" opacity="0.5221843" stroke="TRANSPARENT">
+              <fill>
+                <Color blue="0.878" green="0.992" opacity="0.767" red="1.000" fx:id="x9" />
+              </fill>
+            </SVGPath>
+            <SVGPath id="path5735" content="m 1257.0352,677.45951 -39.2969,97.11218 c 11.5868,-2.90166 11.1552,1.88219 21.0728,14.92076 l 24.4131,-89.03945 c -0.7847,-11.63608 1.8545,-6.56338 -6.189,-22.99349 z" opacity="0.5221843" stroke="TRANSPARENT">
+              <fill>
+                <Color blue="0.878" green="0.992" opacity="0.761" red="1.000" fx:id="x16" />
+              </fill>
+            </SVGPath>
+          </children>
+          <transforms>
+            <Affine mxx="0.89965653" mxy="0.0" myx="0.0" myy="0.7990079" tx="-567.1184" ty="156.17202" />
+          </transforms>
+        </Group>
+        <Group fx:id="star2">
+          <children>
+            <Group id="g6266">
+              <children>
+                <SVGPath id="path5919" content="m 454.49277,776.3945 9.61231,-14.59367 -33.43437,-25.4846 -3.50906,20.13721 27.33112,19.94106" opacity="1.0" stroke="TRANSPARENT" strokeWidth="1.0">
+                  <fill>
+                    <LinearGradient endX="434.3151700000001" endY="744.663144" proportional="false" startX="445.12688" startY="776.716554">
+                      <stops>
+                        <Stop color="$x7" />
+                        <Stop color="$x6" offset="0.49447283" />
+                        <Stop color="$x8" offset="1.0" />
+                      </stops>
+                    </LinearGradient>
+                  </fill>
+                </SVGPath>
+                <SVGPath id="path5923" content="m 426.80295,755.91302 3.01995,-20.54206 -37.06802,25.659 3.7466,14.96057 30.30147,-20.07752" opacity="1.0" stroke="TRANSPARENT" strokeWidth="1.0">
+                  <fill>
+                    <LinearGradient endX="401.34591" endY="745.578984" proportional="false" startX="421.3157" startY="777.632384">
+                      <stops>
+                        <Stop color="$x7" />
+                        <Stop color="$x6" offset="0.49447283" />
+                        <Stop color="$x8" offset="1.0" />
+                      </stops>
+                    </LinearGradient>
+                  </fill>
+                </SVGPath>
+                <SVGPath id="path5927" content="m 399.68856,732.16756 -2.83039,-26.63402 -35.66028,-35.67446 9.33997,34.39412 29.1507,27.91436" opacity="1.0" stroke="TRANSPARENT" strokeWidth="1.0">
+                  <fill>
+                    <LinearGradient endX="363.79759" endY="675.0614390000001" proportional="false" startX="400.25206000000003" startY="727.262739">
+                      <stops>
+                        <Stop color="$x7" />
+                        <Stop color="$x6" offset="0.49447283" />
+                        <Stop color="$x8" offset="1.0" />
+                      </stops>
+                    </LinearGradient>
+                  </fill>
+                </SVGPath>
+                <SVGPath id="path5939" content="m 482.73046,706.63408 15.71349,-33.73224 -36.79157,34.04788 -8.99741,26.32597 30.07549,-26.64161" opacity="1.0" stroke="TRANSPARENT" strokeWidth="1.0">
+                  <fill>
+                    <LinearGradient endX="496.59038" endY="674.145609" proportional="false" startX="457.9482300000001" startY="728.1785090000001">
+                      <stops>
+                        <Stop color="$x7" />
+                        <Stop color="$x6" offset="0.49447283" />
+                        <Stop color="$x8" offset="1.0" />
+                      </stops>
+                    </LinearGradient>
+                  </fill>
+                </SVGPath>
+              </children>
+              <transforms>
+                <Translate x="630.42644" y="22.537603" />
+              </transforms>
+            </Group>
+            <SVGPath id="path4422" content="m 435.31599,751.39808 c -8.70364,-6.92414 -17.81673,-13.58475 -27.33112,-19.94105 -0.72772,-0.48727 -1.45784,-0.97269 -2.19032,-1.45624 -10.51346,6.34799 -20.60662,13.05674 -30.30147,20.07752 1.18005,-13.99983 2.54653,-27.99785 4.10289,-41.99136 -9.22238,-9.56691 -18.95413,-18.87663 -29.1507,-27.91436 12.71893,-3.12115 25.61618,-5.80961 38.68337,-8.02556 5.65821,-12.7609 11.75391,-25.43919 18.30456,-38.01818 0.31768,0.67307 0.63423,1.34643 0.94965,2.02008 5.69486,12.1528 11.00047,24.39185 15.91966,36.69999 12.98804,2.74985 25.77586,5.99439 38.33536,9.70456 -10.54206,8.56903 -20.57621,17.46238 -30.07549,26.64161 1.0827,14.06711 2.00033,28.13568 2.75361,42.20299 z" effect="$filter4113_6" fill="$x5" opacity="1.0" stroke="TRANSPARENT">
+              <transforms>
+                <Affine mxx="1.2233076" mxy="0.0" myx="0.0" myy="1.2779967" tx="562.92197" ty="-175.03003" />
+              </transforms>
+            </SVGPath>
+            <SVGPath id="path4422-6" content="m 430.82417,744.94868 c -8.70364,-6.92414 -13.32491,-7.13535 -22.8393,-13.49165 -0.72772,-0.48727 -1.45784,-0.97269 -2.19032,-1.45624 -10.51346,6.34799 -17.61208,8.04054 -27.30693,15.06132 1.18005,-13.99983 -0.44801,-22.98165 1.10835,-36.97516 -9.22238,-9.56691 -12.96504,-18.87663 -23.16161,-27.91436 12.71893,-3.12115 19.62709,-5.80961 32.69428,-8.02556 5.65821,-12.7609 11.00527,-17.55659 17.55592,-30.13558 0.31768,0.67307 -0.1144,-1.51997 0.20102,-0.84632 5.69486,12.1528 12.49774,19.37565 17.41693,31.68379 12.98804,2.74985 18.2895,5.99439 30.849,9.70456 -10.54206,8.56903 -13.08985,17.46238 -22.58913,26.64161 1.0827,14.06711 -2.49149,21.68628 -1.73821,35.75359 z" effect="$filter4113_8" opacity="1.0" stroke="TRANSPARENT">
+              <fill>
+                <LinearGradient endX="455.24319" endY="681.46356" proportional="false" startX="378.79004" startY="728.0426">
+                  <stops>
+                    <Stop color="$x7" />
+                    <Stop color="$x10" offset="0.5" />
+                    <Stop color="$x11" offset="0.50999999" />
+                    <Stop color="$x12" offset="1.0" />
+                  </stops>
+                </LinearGradient>
+              </fill>
+              <transforms>
+                <Affine mxx="1.2233076" mxy="0.0" myx="0.0" myy="1.2779967" tx="562.78537" ty="-174.17498" />
+              </transforms>
+            </SVGPath>
+            <SVGPath id="path5733-8" content="m 1069.8796,659.95598 -58.8986,55.57731 14.844,12.3752 49.5854,-56.07101 z" fill="$x9" opacity="0.5221843" stroke="TRANSPARENT" />
+            <SVGPath id="path5733-8-2" content="m 1079.8789,677.88732 -52.5571,73.6744 -3.496,28.30552 38.2162,-22.90895 24.5038,-70.51833 c 0.065,-0.1223 -4.431,-1.49686 -4.431,-1.49686 z" fill="$x16" opacity="0.5221843" stroke="TRANSPARENT" />
+          </children>
+          <transforms>
+            <Affine mxx="0.89965653" mxy="0.0" myx="0.0" myy="0.7990079" tx="-548.85548" ty="153.96023" />
+          </transforms>
+        </Group>
+        <Group id="g7509">
+          <children>
+            <Group fx:id="star1">
+              <children>
+                <Group id="g7540">
+                  <children>
+                    <Group id="g7529">
+                      <children>
+                        <Group id="g7519">
+                          <children>
+                            <SVGPath id="path7104" content="m 955.85244,805.84546 -18.34902,-12.11387 -42.4483,-16.55052 26.09771,15.71403 34.69961,12.95036" fill="$x13" opacity="1.0" stroke="TRANSPARENT" strokeWidth="2.0" />
+                            <SVGPath id="path7106" content="m 925.921,795.81782 -26.09771,-15.71403 -30.851,34.60878 31.72938,8.18574 25.21933,-27.08049" opacity="1.0" stroke="TRANSPARENT" strokeWidth="2.0">
+                              <fill>
+                                <LinearGradient endX="879.9800130000001" endY="801.403824" proportional="false" startX="916.6728700000001" startY="803.090344">
+                                  <stops>
+                                    <Stop color="$x7" />
+                                    <Stop color="$x6" offset="0.46282449" />
+                                    <Stop color="$x8" offset="1.0" />
+                                  </stops>
+                                </LinearGradient>
+                              </fill>
+                            </SVGPath>
+                            <SVGPath id="path7120" content="m 968.76933,735.06776 -16.52935,-32.60234 -26.84867,43.05718 21.43042,23.23631 21.9476,-33.69115" opacity="1.0" stroke="TRANSPARENT" strokeWidth="2.0">
+                              <fill>
+                                <LinearGradient endX="950.10688" endY="710.0543339999999" proportional="false" startX="956.3499200000001" startY="759.7224239999999">
+                                  <stops>
+                                    <Stop color="$x7" />
+                                    <Stop color="$x6" offset="0.46282449" />
+                                    <Stop color="$x8" offset="1.0" />
+                                  </stops>
+                                </LinearGradient>
+                              </fill>
+                            </SVGPath>
+                            <SVGPath id="path7122" content="m 946.82173,768.75891 -21.43042,-23.23631 16.88028,51.13171 18.34902,12.11387 -13.79888,-40.00927" opacity="1.0" stroke="TRANSPARENT" strokeWidth="2.0">
+                              <fill>
+                                <LinearGradient endX="928.8842900000001" endY="766.3404039999999" proportional="false" startX="984.0315800000001" startY="795.708574">
+                                  <stops>
+                                    <Stop color="$x7" />
+                                    <Stop color="$x6" offset="0.46282449" />
+                                    <Stop color="$x8" offset="1.0" />
+                                  </stops>
+                                </LinearGradient>
+                              </fill>
+                            </SVGPath>
+                            <SVGPath id="path4426" content="m 310.10158,760.31835 c -11.23125,-4.66936 -22.81565,-8.9881 -34.69961,-12.95036 -8.78033,8.84784 -17.17944,17.89091 -25.21933,27.08049 -2.09783,-13.92141 -4.05378,-27.87814 -5.86443,-41.86748 -11.30901,-7.09049 -22.9577,-13.89115 -34.90153,-20.38718 11.6108,-5.9248 23.44752,-11.55421 35.50175,-16.8484 2.34778,-13.75805 5.0447,-27.53155 8.10823,-41.30381 8.9264,10.94203 17.55908,22.03756 25.87906,33.27698 13.16664,-0.65624 26.29403,-0.89605 39.34458,-0.70066 -7.80671,11.0867 -15.11269,22.33001 -21.9476,33.69115 4.73021,13.30219 9.33066,26.63913 13.79888,40.00927 z" effect="$filter4113_6_8" fill="$x5" opacity="1.0" stroke="TRANSPARENT" strokeWidth="1.0">
+                              <transforms>
+                                <Affine mxx="1.2233076" mxy="0.0" myx="0.0" myy="1.2779967" tx="562.92197" ty="-175.03003" />
+                              </transforms>
+                            </SVGPath>
+                            <SVGPath id="path4426-3" content="m 304.0673,754.5423 c -11.23125,-4.66936 -16.78137,-3.21205 -28.66533,-7.17431 -8.78033,8.84784 -17.17944,10.67084 -25.21933,19.86042 -2.09783,-13.92141 -4.05378,-20.65807 -5.86443,-34.64741 -11.30901,-7.09049 -17.67771,-13.89115 -29.62154,-20.38718 11.6108,-5.9248 18.16753,-11.55421 30.22176,-16.8484 2.34778,-13.75805 5.0447,-21.03349 8.10823,-34.80575 8.9264,10.94203 17.55908,15.5395 25.87906,26.77892 13.16664,-0.65624 18.75118,2.71398 31.80173,2.90937 -7.80671,11.0867 -7.56984,18.71998 -14.40475,30.08112 4.73021,13.30219 3.29638,20.86308 7.7646,34.23322 z" effect="$filter4113_8_7" opacity="1.0" stroke="TRANSPARENT" strokeWidth="1.0">
+                              <fill>
+                                <LinearGradient endX="284.77487" endY="703.12372" proportional="false" startX="243.01881" startY="735.2627">
+                                  <stops>
+                                    <Stop color="$x7" />
+                                    <Stop color="$x10" offset="0.5" />
+                                    <Stop color="$x11" offset="0.5" />
+                                    <Stop color="$x12" offset="1.0" />
+                                  </stops>
+                                </LinearGradient>
+                              </fill>
+                              <transforms>
+                                <Affine mxx="1.2233076" mxy="0.0" myx="0.0" myy="1.2779967" tx="563.98636" ty="-175.54791" />
+                              </transforms>
+                            </SVGPath>
+                            <SVGPath id="path5733-8-5" content="m 889.6102,684.09286 -49.6658,64.55365 15.10966,6.89012 42.29015,-62.02455 z" fill="$x9" opacity="0.5221843" stroke="TRANSPARENT" />
+                            <SVGPath id="path5733-8-2-0" content="m 898.51049,700.11038 -35.37494,69.83897 5.52392,44.87266 30.85296,-34.69003 10.27859,-77.00529 -8.12186,0.34859 z" fill="$x16" opacity="0.5221843" stroke="TRANSPARENT" />
+                          </children>
+                        </Group>
+                      </children>
+                    </Group>
+                  </children>
+                </Group>
+              </children>
+            </Group>
+          </children>
+          <transforms>
+            <Affine mxx="0.89965653" mxy="0.0" myx="0.0" myy="0.7990079" tx="-548.85548" ty="153.96023" />
+          </transforms>
+        </Group>
+        <Text id="text7659" fill="WHITE" opacity="1.0" stroke="TRANSPARENT" text="Best" x="328.48904" y="384.63797">
+          <font>
+            <Font name="Feast of Flesh BB" size="20.0" fx:id="x14" />
+          </font>
+          <transforms>
+            <Translate x="0.0" y="545.00218" />
+          </transforms>
+        </Text>
+        <Text id="bestscore" fill="WHITE" font="$x14" opacity="1.0" stroke="TRANSPARENT" text="000" x="377.39331" y="928.71741" />
+        <SVGPath id="littlestar1" content="m 897.80855,245.30693 -36.87966,-22.11403 -39.12466,17.84381 9.63525,-41.90826 -29.06066,-31.69572 42.83458,-3.78669 21.16418,-37.43285 16.83798,39.56796 42.14084,8.56094 -32.42814,28.24104 z" effect="$filter4113_8_7" opacity="1.0" stroke="TRANSPARENT" strokeWidth="1.25035322">
+          <fill>
+            <Color blue="0.000" green="0.651" red="0.965" fx:id="x15" />
+          </fill>
+          <transforms>
+            <Affine mxx="0.07585521" mxy="0.00400749" myx="-0.00393588" myy="0.0757072" tx="389.85649" ty="908.81032" />
+          </transforms>
+        </SVGPath>
+        <SVGPath id="littlestar2" content="m 897.80855,245.30693 -36.87966,-22.11403 -39.12466,17.84381 9.63525,-41.90826 -29.06066,-31.69572 42.83458,-3.78669 21.16418,-37.43285 16.83798,39.56796 42.14084,8.56094 -32.42814,28.24104 z" effect="$filter4113_8_7_4" fill="$x15" opacity="1.0" stroke="TRANSPARENT" strokeWidth="1.25035322">
+          <transforms>
+            <Affine mxx="0.07585521" mxy="0.00400749" myx="-0.00393588" myy="0.0757072" tx="399.79477" ty="908.81032" />
+          </transforms>
+        </SVGPath>
+        <SVGPath id="littlestar3" content="m 897.80855,245.30693 -36.87966,-22.11403 -39.12466,17.84381 9.63525,-41.90826 -29.06066,-31.69572 42.83458,-3.78669 21.16418,-37.43285 16.83798,39.56796 42.14084,8.56094 -32.42814,28.24104 z" effect="$filter4113_8_7_1" fill="$x15" opacity="1.0" stroke="TRANSPARENT" strokeWidth="1.25035322">
+          <transforms>
+            <Affine mxx="0.07585521" mxy="0.00400749" myx="-0.00393588" myy="0.0757072" tx="409.73305" ty="908.81032" />
+          </transforms>
+        </SVGPath>
+        <Rectangle id="rect3166" height="96.885811" opacity="1.0" width="661.59167" x="-100.5767" y="4.4764791" />
+      </children>
+      <transforms>
+        <Translate x="0.0" y="-545.00218" />
+      </transforms>
+    </Group>
+  </children>
+</fx:root>

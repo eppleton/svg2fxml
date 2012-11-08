@@ -2,5 +2,5 @@ Manifest-Version: 1.0
 OpenIDE-Module: de.eppleton.modules.javafx.svg/1
 OpenIDE-Module-Layer: de/eppleton/modules/javafx/svg/layer.xml
 OpenIDE-Module-Localizing-Bundle: de/eppleton/modules/javafx/svg/Bundle.properties
-OpenIDE-Module-Specification-Version: 1.7
+OpenIDE-Module-Specification-Version: 1.8
 
