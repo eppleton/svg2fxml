@@ -9,7 +9,6 @@
 >
     <xsl:strip-space elements="*"/>
 
-
     <xsl:template match="/">
         <xsl:processing-instruction name="import">javafx.scene.*</xsl:processing-instruction>
         <xsl:processing-instruction name="import">javafx.scene.shape.*</xsl:processing-instruction>
@@ -33,10 +32,10 @@
         </xsl:element>
     </xsl:template> 
     
+    
     <xsl:template match="svg:clipPath">
         <Group>
-            <xsl:if test="@id != ''">
-                
+            <xsl:if test="@id != ''">               
                 <xsl:attribute name="fx:id">
                     <xsl:value-of select="translate(@id, '-' , '')"/>
                 </xsl:attribute>
@@ -325,6 +324,7 @@
     </xsl:template>
     
     <xsl:template name="element">
+        
         <xsl:param name="element"/>
         <xsl:if test="@id != ''">
             <xsl:attribute name="id">
@@ -524,13 +524,19 @@
     <xsl:template name="style">
         <xsl:param name="style"/>
         <xsl:variable name="opacity">
-            1
+            <xsl:variable name="optional_opacity">
             <xsl:for-each select="str:split($style, ';')"> 
                 <xsl:if test="substring-before(.,':')='opacity'">
                      <xsl:value-of select="substring-after(.,'opacity:')"></xsl:value-of>
                 </xsl:if>
             </xsl:for-each>
-            
+            </xsl:variable>
+             <xsl:choose>
+                 <xsl:when test="$optional_opacity !=''">
+                     <xsl:value-of select="$optional_opacity"/>
+                 </xsl:when>
+                 <xsl:otherwise>1</xsl:otherwise>
+             </xsl:choose>
             
            <!-- <xsl:choose>
                 <xsl:when test="contains($style,'opacity:')">
@@ -666,7 +672,30 @@
                             <xsl:value-of select="substring-before( substring-after(.,'url(#'),')')"/>
                         </xsl:variable>
                         <!--  <xsl:value-of select="/svg/defs/id(substring-before( substring-after(.,'url(#'),')'))/@x1"/>-->
-                        <xsl:if test="contains($id,'linearGradient')">
+                        <xsl:variable name="gradientel">
+                            <xsl:value-of select="name(//*[@id=$id])"/>
+                        </xsl:variable>
+                      
+                        <xsl:if test="contains($gradientel,'linearGradient')">
+                            <xsl:element name="LinearGradient">
+                                <xsl:call-template name="gradient">
+                                    <xsl:with-param name="gradient" select="//*[@id=$id]"/>
+                                    <xsl:with-param name="type" >linear</xsl:with-param>                                   
+                                    <xsl:with-param name="opacity" select="$opacity"/>
+                                </xsl:call-template>                      
+                            </xsl:element>
+                        </xsl:if>
+                        <xsl:if test="contains($gradientel,'radialGradient')">
+                            <xsl:element name="RadialGradient">
+                                <xsl:call-template name="gradient">
+                                    <xsl:with-param name="gradient" select="//*[@id=$id]"/>
+                                    <xsl:with-param name="type" >radial</xsl:with-param>  
+                                    <xsl:with-param name="opacity" select="$opacity"/>
+
+                                </xsl:call-template>                      
+                            </xsl:element>
+                        </xsl:if>    
+                        <!-- <xsl:if test="contains($id,'linearGradient')">
                             <xsl:element name="LinearGradient">
                                 <xsl:call-template name="gradient">
                                     <xsl:with-param name="gradient" select="//*[@id=$id]"/>
@@ -683,7 +712,7 @@
                                     <xsl:with-param name="opacity" select="$opacity"/>
                                 </xsl:call-template>                      
                             </xsl:element>
-                        </xsl:if>
+                        </xsl:if>-->
                     </xsl:if>
                    
                     <xsl:if test="contains(substring-after(.,':'),'none')">TRANSPARENT</xsl:if>
@@ -692,6 +721,7 @@
             </xsl:if>
             <xsl:if test="substring-before(.,':')='fill'">
                 <xsl:element name="fill">
+                    
                     <xsl:if test="contains(.,':#')">
                         <xsl:element name="Color">
                             <xsl:call-template name="color">
@@ -713,18 +743,20 @@
                         <xsl:variable name="id">                        
                             <xsl:value-of select="substring-before( substring-after(.,'url(#'),')')"/>
                         </xsl:variable>
-                        <!--  <xsl:value-of select="/svg/defs/id(substring-before( substring-after(.,'url(#'),')'))/@x1"/>-->
-                        <xsl:if test="contains($id,'linearGradient')">
+                        <xsl:variable name="gradientel">
+                            <xsl:value-of select="name(//*[@id=$id])"/>
+                        </xsl:variable>
+                      
+                        <xsl:if test="contains($gradientel,'linearGradient')">
                             <xsl:element name="LinearGradient">
                                 <xsl:call-template name="gradient">
                                     <xsl:with-param name="gradient" select="//*[@id=$id]"/>
                                     <xsl:with-param name="type" >linear</xsl:with-param>                                   
                                     <xsl:with-param name="opacity" select="$opacity"/>
-
                                 </xsl:call-template>                      
                             </xsl:element>
                         </xsl:if>
-                        <xsl:if test="contains($id,'radialGradient')">
+                        <xsl:if test="contains($gradientel,'radialGradient')">
                             <xsl:element name="RadialGradient">
                                 <xsl:call-template name="gradient">
                                     <xsl:with-param name="gradient" select="//*[@id=$id]"/>
@@ -776,9 +808,20 @@
                         </xsl:attribute>
                         <color>
                             <xsl:element name="Color">
-                                <xsl:call-template name="color" >                 
-                                    <xsl:with-param name="hexColor" select="substring-after(./@style,'stop-color:')"/>
-                                </xsl:call-template>
+                                <xsl:choose>
+                                    <xsl:when test="./@stop-color">
+                                        <xsl:call-template name="color" >  
+                                            <xsl:with-param name="hexColor" select="./@stop-color"/>
+                                        </xsl:call-template>
+
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:call-template name="color" >                 
+                                            <xsl:with-param name="hexColor" select="substring-after(./@style,'stop-color:')"/>
+                                        </xsl:call-template>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                               
                                 <xsl:choose>
                                     <xsl:when test="contains(./@style,'stop-opacity')">
                                         <opacity>
@@ -983,7 +1026,7 @@
                 </xsl:call-template>
             </xsl:element>
         </xsl:if>
-        
+   
     </xsl:template>
     
     <xsl:template name="HexToDecimal">

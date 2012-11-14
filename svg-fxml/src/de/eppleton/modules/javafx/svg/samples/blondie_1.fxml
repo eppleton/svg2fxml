@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.transform.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<Group id="Document" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" xmlns:fx="http://javafx.com/fxml" xmlns:str="http://exslt.org/strings"><children>
+	<fx:define>
+		
+			
+			
+			
+			
+		
+	
+	</fx:define>
+	<SVGPath content="M 289.5104 36.2175 C 289.5104 36.2175 276.5634 19.1176 263.5901 18.2434 C 249.0972 17.2672 228.9488 27.3282 226.4555 23.0053 C 223.9602 18.6819 216.4559 4.9115 210.2027 1.7988 C 202.9338 -1.8184 209.0386 2.1319 218.6826 20.2554 C 228.3257 38.3804 231.152 32.3943 233.4792 32.5603 C 235.8075 32.7273 252.2663 29.5677 260.0822 31.064 C 267.897 32.5603 289.5104 36.2175 289.5104 36.2175 Z">fill:url(#gradient1);<opacity/><fill/></SVGPath>
+	</children></Group>

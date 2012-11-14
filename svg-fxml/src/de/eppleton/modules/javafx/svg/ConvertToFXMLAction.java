@@ -32,6 +32,8 @@ import org.openide.util.Exceptions;
 import org.openide.util.NbBundle.Messages;
 import org.openide.util.RequestProcessor;
 import org.openide.util.TaskListener;
+import de.eppleton.modules.javafx.svg2fxml.NewGroovyClass;
+import de.eppleton.modules.javafx.svg2fxml.SVGToFXMLCOnvertor;
 
 @ActionID(category = "File",
 id = "de.eppleton.modules.javafx.svg.ConvertToFXMLAction")
@@ -48,6 +50,7 @@ public final class ConvertToFXMLAction implements ActionListener {
 
     public ConvertToFXMLAction(DataObject context) {
         this.context = context;
+        
     }
 
     public void actionPerformed(ActionEvent ev) {
@@ -79,6 +82,9 @@ public final class ConvertToFXMLAction implements ActionListener {
                         return;
                     }
 
+//                    SVGToFXMLCOnvertor cOnvertor = new SVGToFXMLCOnvertor();
+//                    cOnvertor.parseXML(context.getPrimaryFile().asText());
+                    
                     Source xmlSource = new StreamSource(context.getPrimaryFile().
                             getInputStream());
 

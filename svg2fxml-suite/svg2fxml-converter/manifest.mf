@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: de.eppleton.modules.javafx.svg2fxml
+OpenIDE-Module-Localizing-Bundle: de/eppleton/modules/javafx/svg2fxml/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

@@ -2,7 +2,7 @@
 <!-- Generator: Adobe Illustrator 16.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_x5F_1_x5F_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" width="414px" height="543px" viewBox="0 0 414 543" enable-background="new 0 0 414 543" xml:space="preserve">
+     y="0px" width="414px" height="543px" viewBox="0 0 414 543" enable-background="new 0 0 414 543" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="260.3418" y1="54.8896" x2="249.2172" y2="20.6516">
 	<stop  offset="0" style="stop-color:#D4A55F"/>
 	<stop  offset="0.01" style="stop-color:#D4A55F"/>
@@ -437,6 +437,11 @@
 	<stop  offset="0.99" style="stop-color:#E0DFCB"/>
 	<stop  offset="1" style="stop-color:#E0DFCB"/>
 </radialGradient>
+
+JayDay is sponsored by hybris AG, Atlassian, Oracle and ConSol* Consulting & Solutions Software GmbH
+
+
+
 <path fill="url(#SVGID_56_)" d="M357,102c0,0,0,0,0-1c3,7,1,14,0,18l0,0c2-2,3-4,4-7c0-1,1-4,0-5C360,105,359,104,357,102z"/>
 <radialGradient id="SVGID_57_" cx="332" cy="133" r="9" gradientUnits="userSpaceOnUse">
 	<stop  offset="0" style="stop-color:#FFFFFF"/>

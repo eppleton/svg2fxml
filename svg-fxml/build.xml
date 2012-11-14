@@ -5,4 +5,5 @@
 <project name="de.eppleton.modules.javafx.svg" default="netbeans" basedir=".">
     <description>Builds, tests, and runs the project de.eppleton.modules.javafx.svg.</description>
     <import file="nbproject/build-impl.xml"/>
+    
 </project>
